@@ -9,4 +9,7 @@ window.onload = function() {
 		myOption.innerHTML = countries[i];
 		mySelect.appendChild(myOption);
 	}
+	mySelect.addEventListener("change", e => {
+		alert(e.target.value);
+	});
 };
