@@ -9,6 +9,7 @@ window.onload = function() {
 		myOption.innerHTML = countries[i];
 		mySelect.appendChild(myOption);
 	}
+	this.console.log(mySelect);
 	mySelect.addEventListener("change", e => {
 		alert(e.target.value);
 	});
