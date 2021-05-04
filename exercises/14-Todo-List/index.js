@@ -7,7 +7,7 @@ let liFather = document.querySelector("#container > ul");
 //Borrar elementos
 liFather.addEventListener("click", e => {
 	if (e.target.className == "fa fa-trash") {
-		liFather.removeChild(e.target.parentElement);
+		liFather.removeChild(e.target.parentElement.parentElement);
 	}
 });
 
